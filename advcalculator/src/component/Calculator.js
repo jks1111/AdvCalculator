@@ -7,9 +7,9 @@ const Calculator = () => {
   const [result, setResult] = useState(null);
   const [confetti, setConfetti] = useState(false);
   const [memory, setMemory] = useState(0);
-  const [radians, setRadians] = useState(true); // Default to radians
-  const [theme, setTheme] = useState('dark'); // Default theme is light
-  const [history, setHistory] = useState([]); // Store calculation history
+  const [radians, setRadians] = useState(true); 
+  const [theme, setTheme] = useState('dark');
+  const [history, setHistory] = useState([]); 
 
   const handleInput = (value) => {
     setInput(input + value);
@@ -22,15 +22,15 @@ const Calculator = () => {
 
   const handleCalculate = () => {
     try {
-      // Evaluate the expression using eval
+      
       const res = eval(input.replace('×', '*').replace('÷', '/'));
       setResult(res);
       setInput(res.toString());
 
-      // Add to history
+      
       setHistory([...history, `${input} = ${res}`]);
 
-      // Check for special condition (operations involving 5 and 6)
+      
       if (/\b5\b.*\b6\b|\b6\b.*\b5\b/.test(input)) {
         setConfetti(true);
         setTimeout(() => setConfetti(false), 3000); // Show confetti for 3 seconds
@@ -95,7 +95,7 @@ const Calculator = () => {
       case 'factorial':
         res = factorial(value);
         break;
-      // Add other cases for other scientific functions
+      
       default:
         res = value;
     }
