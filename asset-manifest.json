@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AdvCalculator/static/css/main.bb130c42.css",
+    "main.js": "/AdvCalculator/static/js/main.9e963525.js",
+    "index.html": "/AdvCalculator/index.html",
+    "main.bb130c42.css.map": "/AdvCalculator/static/css/main.bb130c42.css.map",
+    "main.9e963525.js.map": "/AdvCalculator/static/js/main.9e963525.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb130c42.css",
+    "static/js/main.9e963525.js"
+  ]
+}
